@@ -1,0 +1,2169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acciojob</title>
+    <!--=========================== External Css =========================================-->
+    <link rel="stylesheet" href="style.css" />
+    <!--========================== Bootstrap Link ========================================-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--======================== Font-awsome Link ==========================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--========================= Favicon Link  ==============================================-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href=" data:image/png;base64,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 "
+    />
+  </head>
+  <body>
+    <!--============================= Navbar Start ==============================================-->
+
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+        <h1 class="logo"></h1>
+          <ul class="nav-list">
+           <li> <img src="https://acciojob.com/_next/static/media/full_logo.1a83ae71.svg?imwidth=256"/></li>
+            <li><a href="#home">Courses</a></li>
+            <li><a href="#jobs">AccioJob Reviews</a></li>
+            <li><a href="#about">Scholarship Test</a></li>
+            <li><a href="#contact">More</a></li>
+            <button type="button" class="btn btn-outline-primary">Login</button>
+          </ul>
+        </nav>
+      </div>
+      <!--======================================= Navbar End ======================================-->
+
+      <!--======================================= Announcebar Start ======================================-->
+      <br>
+      <div class="announce-bar">
+        <i></i> Next batch starts in ⌛️ 22 Days, Hurry!
+      </div>
+    </header>
+    <!--======================================= Announcebar End ======================================-->
+
+    <!--====================================== Section 1 Start ====================================-->
+    <section class="hero" id="home">
+      <div class="container">
+        <h1 class="hero-title">
+          <br />
+          <i
+            >Launch your career with our <br />
+            <span>Full Stack Developer</span> Courses</i
+          >
+        </h1>
+        <p class="hero-description">
+          Curriculum designed and taught by Alumni IIT's & <br />
+          Leading Tech Companies.
+        </p>
+      
+        <div class="header-content-wrapper">
+          <div class="header-content">
+            <span
+              style="
+                box-sizing: border-box;
+                display: inline-block;
+                overflow: hidden;
+                width: initial;
+                height: initial;
+                background: none;
+                opacity: 1;
+                border: 0px;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+                max-width: 100%;
+              "
+              ><span
+                style="
+                  box-sizing: border-box;
+                  display: block;
+                  width: initial;
+                  height: initial;
+                  background: none;
+                  opacity: 1;
+                  border: 0px;
+                  margin: 0px;
+                  padding: 0px;
+                  max-width: 100%;
+                "
+                ><img
+                
+                  aria-hidden="true"
+                  src=""
+                  style="
+                    display: block;
+                    max-width: 100%;
+                    width: initial;
+                    height: initial;
+                    background: none;
+                    opacity: 1;
+                    border: 0px;
+                    margin: 0px;
+                    padding: 0px;
+                  " /></span
+              ><img
+                
+                srcset="
+                  _next/static/media/sheild_green_check.eb639f41.svg?imwidth=48 1x,
+                  _next/static/media/sheild_green_check.eb639f41.svg?imwidth=96 2x
+                "
+                src=""
+                decoding="async"
+                data-nimg="intrinsic"
+                style="
+                  position: absolute;
+                  inset: 0px;
+                  box-sizing: border-box;
+                  padding: 0px;
+                  border: none;
+                  margin: auto;
+                  display: block;
+                  width: 0px;
+                  height: 0px;
+                  min-width: 100%;
+                  max-width: 100%;
+                  min-height: 100%;
+                  max-height: 100%;
+                  object-position: left center;
+                "
+            /></span>
+            <div class="header-content-div">
+              <p class="header-content-heading">41 Lakhs</p>
+              <p class="header-content-subheading">Highest Salary</p>
+            </div>
+          </div>
+          <div class="header-content">
+            <span
+            
+              ><span
+               
+                ><img
+                 
+                  aria-hidden="true"
+                  src=""
+                  style="
+                    display: block;
+                    max-width: 100%;
+                    width: initial;
+                    height: initial;
+                    background: none;
+                    opacity: 1;
+                    border: 0px;
+                    margin: 0px;
+                    padding: 0px;
+                  " /></span
+              ><img
+               
+                srcset="
+                  _next/static/media/medel.26c4481e.svg?imwidth=48 1x,
+                  _next/static/media/medel.26c4481e.svg?imwidth=96 2x
+                "
+                src=""
+                decoding="async"
+                data-nimg="intrinsic"
+                style="
+                  position: absolute;
+                  inset: 0px;
+                  box-sizing: border-box;
+                  padding: 0px;
+                  border: none;
+                  margin: auto;
+                  display: block;
+                  width: 0px;
+                  height: 0px;
+                  min-width: 100%;
+                  max-width: 100%;
+                  min-height: 100%;
+                  max-height: 100%;
+                  object-position: left center;
+                "
+            /></span>
+            <div class="header-content-div">
+              <p class="header-content-heading">300+</p>
+              <p class="header-content-subheading">Partner Companies</p>
+            </div>
+          </div>
+          <div class="header-content">
+            <span
+              style="
+                box-sizing: border-box;
+                display: inline-block;
+                overflow: hidden;
+                width: initial;
+                height: initial;
+                background: none;
+                opacity: 1;
+                border: 0px;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+                max-width: 100%;
+              "
+              ><span
+                style="
+                  box-sizing: border-box;
+                  display: block;
+                  width: initial;
+                  height: initial;
+                  background: none;
+                  opacity: 1;
+                  border: 0px;
+                  margin: 0px;
+                  padding: 0px;
+                  max-width: 100%;
+                "
+                ><img
+                 
+                  aria-hidden="true"
+                  src=""
+                  style="
+                    display: block;
+                    max-width: 100%;
+                    width: initial;
+                    height: initial;
+                    background: none;
+                    opacity: 1;
+                    border: 0px;
+                    margin: 0px;
+                    padding: 0px;
+                  " /></span
+              ><img
+                
+                srcset="
+                  _next/static/media/people_orange.3c733ba9.svg?imwidth=48 1x,
+                  _next/static/media/people_orange.3c733ba9.svg?imwidth=96 2x
+                "
+                src=""
+                decoding="async"
+                data-nimg="intrinsic"
+                style="
+                  position: absolute;
+                  inset: 0px;
+                  box-sizing: border-box;
+                  padding: 0px;
+                  border: none;
+                  margin: auto;
+                  display: block;
+                  width: 0px;
+                  height: 0px;
+                  min-width: 100%;
+                  max-width: 100%;
+                  min-height: 100%;
+                  max-height: 100%;
+                  object-position: left center;
+                "
+            /></span>
+            <div class="header-content-div">
+              <p class="header-content-heading">100%</p>
+              <p class="header-content-subheading">Job Gurrante</p>
+            </div>
+          </div>
+          <div class="header-content">
+            <span
+              style="
+                box-sizing: border-box;
+                display: inline-block;
+                overflow: hidden;
+                width: initial;
+                height: initial;
+                background: none;
+                opacity: 1;
+                border: 0px;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+                max-width: 100%;
+              "
+              ><span
+                style="
+                  box-sizing: border-box;
+                  display: block;
+                  width: initial;
+                  height: initial;
+                  background: none;
+                  opacity: 1;
+                  border: 0px;
+                  margin: 0px;
+                  padding: 0px;
+                  max-width: 100%;
+                "
+                ><img
+               
+                  aria-hidden="true"
+                  src=""
+                  style="
+                    display: block;
+                    max-width: 100%;
+                    width: initial;
+                    height: initial;
+                    background: none;
+                    opacity: 1;
+                    border: 0px;
+                    margin: 0px;
+                    padding: 0px;
+                  " /></span
+              ><img
+           
+                srcset="
+                  _next/static/media/doler_round_blue.a2c7bc89.svg?imwidth=48 1x,
+                  _next/static/media/doler_round_blue.a2c7bc89.svg?imwidth=96 2x
+                "
+                src="./icons/doler.svg"
+                decoding="async"
+                data-nimg="intrinsic"
+                style="
+                  position: absolute;
+                  inset: 0px;
+                  box-sizing: border-box;
+                  padding: 0px;
+                  border: none;
+                  margin: auto;
+                  display: block;
+                  width: 0px;
+                  height: 0px;
+                  min-width: 100%;
+                  max-width: 100%;
+                  min-height: 100%;
+                  max-height: 100%;
+                  object-position: left center;
+                "
+            /></span>
+            <div class="header-content-div">
+              <p class="header-content-heading">8.3 LPA</p>
+              <p class="header-content-subheading">Average Salary</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="header-special-content">
+        <div>Made with 💙 by an AccioJob Student</div>
+      </button>
+
+      <div style="position: relative; visibility: visible">
+        <iframe
+          id="auth-signup-iframe"
+          src="https://authentication.acciojob.com/landing-auth/signup"
+          height="500"
+          width="450"
+          style="border-radius: 18px; background-color: rgb(255, 255, 255)"
+        ></iframe>
+        <div class="background-shadow">
+          <div class="color"></div>
+          <div class="color"></div>
+          <div class="color"></div>
+          <div class="color"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--====================================== Section 1 End ====================================-->
+
+    <!--====================================== Section 2 Start ====================================-->
+      <section class="courses">
+        <h2 class="h2">LEARN Full-STACK WEB DEVELOPMENT</h2>
+        <h2 class="hello">Our Courses</h2>
+  
+        
+        <div class="course-card">
+          
+          <h3>Beginner</h3>
+          <h4>100% Job gurrante</h4>
+          <h5>Lifetime Access</h5>
+          <h6>For you to start their coding journey from scratch</h6>
+         
+         
+      
+           
+            <section class="courses">
+            
+              
+             
+              <table class="course-table">
+                  <tr>
+                      <th>Criteria</th>
+                      <th>Description</th>
+                     
+                  </tr>
+                  <tr>
+                      <td>Placement Starts</td>
+                      <td>in 4 Months</td>
+                      
+                     
+                  </tr>
+                  <tr>
+                      <td>Eligibility</td>
+                      <td>Final year students or <br> Graduates, All degrees</td>
+                     
+                  </tr>
+                  <tr>
+                    <td>Duration</td>
+                    <td>12 Months</td>
+                    
+                   
+                </tr>
+                <tr>
+                  <td>Daily Effort</td>
+                  <td>5-7 hours</td>
+                  
+                 
+              </tr>
+              <tr>
+                <td>Next Batch On</td>
+                <td>27th Dec 2022</td>
+                
+               
+            </tr>
+                  
+              </table>
+              <a href="#">Brochure</a>
+              <a href="#">Learn More</a>
+             </div>
+  </section>
+<section>
+  <div class="course-card">
+          
+    <h3>Intermediate</h3>
+    <h4 class="h4">Pay After Placement</h4>
+    <h5 class="h5">Lifetime Access</h5>
+    <h6>For learners with good aptitude & logical reasoning</h6>
+   
+   
+
+      <section class="courses">
+      
+        
+       
+        <table class="course-table">
+            <tr>
+                <th>Criteria</th>
+                <th>Description</th>
+               
+            </tr>
+            <tr>
+                <td>Placement Starts</td>
+                <td>in 6 Months</td>
+                
+               
+            </tr>
+            <tr>
+                <td>Eligibility</td>
+                <td> 2019-2023 Batch <br> Students, All degrees</td>
+               
+            </tr>
+            <tr>
+              <td>Duration</td>
+              <td>10 Months</td>
+              
+             
+          </tr>
+          <tr>
+            <td>Daily Effort</td>
+            <td>8-10 hours</td>
+            
+           
+        </tr>
+        <tr>
+          <td>Next Batch On</td>
+          <td>27th Dec 2022</td>
+          
+         
+      </tr>
+            
+        </table>
+        <a href="#">Brochure</a>
+        <a href="#">Learn More</a>
+       </div>
+      </section>
+     <!--====================================== Section 2 End ====================================-->
+      
+    <!--====================================== Section 3 Start ====================================-->
+    <div class="companies-logo-wrapper" id="hiring-partner">
+      <div class="companies-logo-gradient">OVER 300+ HIRING PARTNERS</div>
+      <div class="companies-logo-heading">
+        Top Startups &amp; MNCs Hire<span class="span-blue"></span>
+      </div>
+      <div class="role-change-company">
+        <div class="Typewriter" data-testid="typewriter-wrapper">
+          <span class="Typewriter__wrapper">Software Engineer</span
+          >
+        </div>
+      </div>
+      <p class="companies-logo-text"></p>
+      <div class="logo-wrapper">
+        <div
+          class="marquee-container"
+          style="
+            --pause-on-hover: running;
+            --pause-on-click: running;
+            --width: 100%;
+            --transform: none;
+          "
+        >
+          <div
+            class="marquee"
+            style="
+              --play: running;
+              --direction: normal;
+              --duration: 62.4s;
+              --delay: 0s;
+              --iteration-count: infinite;
+              --min-width: 100%;
+            "
+          >
+            <div class="initial-child-container">
+              <div class="child" style="--transform: none">
+                <div class="companies-logo">
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/walmart.png"
+                      alt="Walmart Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/amazon.png"
+                      alt="Amazon Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/lowes.png"
+                      alt="Lowes Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/maersk.png"
+                      alt="Maersk Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/mmt.png"
+                      alt="MakeMyTrip Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/Tata.png"
+                      alt="Tata-Digital Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/th.png"
+                      alt="Thoughtworks Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/cele.jfif"
+                      alt="37_celebal"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/hsbc.png"
+                      alt="HSBC Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/neu.png"
+                      alt="Neustar Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/capge.png"
+                      alt="1Capgemini Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/paytm.png"
+                      alt="Paytm Logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="marquee"
+            style="
+              --play: running;
+              --direction: normal;
+              --duration: 62.4s;
+              --delay: 0s;
+              --iteration-count: infinite;
+              --min-width: 100%;
+            "
+          >
+            <div class="child" style="--transform: none">
+              <div class="companies-logo">
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/walmart.png"
+                    alt="Walmart Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/amazon.png"
+                    alt="Amazon Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/lowes.png"
+                    alt="Lowes Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/maersk.png"
+                    alt="Maersk Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/mmt.png"
+                    alt="MakeMyTrip Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/Tata.png"
+                    alt="Tata-Digital Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/th.png"
+                    alt="Thoughtworks Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/cele.jfif"
+                    alt="37_celebal"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/hsbc.png"
+                    alt="HSBC Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/neu.png"
+                    alt="Neustar Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/capge.png"
+                    alt="1Capgemini Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/paytm.png"
+                    alt="Paytm Logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="marquee-container"
+          style="
+            --pause-on-hover: running;
+            --pause-on-click: running;
+            --width: 100%;
+            --transform: none;
+          "
+        >
+          <div
+            class="marquee"
+            style="
+              --play: running;
+              --direction: reverse;
+              --duration: 62.4s;
+              --delay: 0s;
+              --iteration-count: infinite;
+              --min-width: 100%;
+            "
+          >
+            <div class="initial-child-container">
+              <div class="child" style="--transform: none">
+                <div class="companies-logo">
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/inno.png"
+                      alt="Innovacer Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/free.png"
+                      alt="Freecharge Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/pub.png"
+                      alt="Publicis-Sapient Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/veri.png"
+                      alt="Verifone Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/myst.png"
+                      alt="Mystifly Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/park.jfif"
+                      alt="Park+ Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/cadence.png"
+                      alt="Cadence Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/salesf.png"
+                      alt="Salesforce Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/bny m.png"
+                      alt="BNY-Mellon Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/air.png"
+                      alt="Airtel Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/hcl.png"
+                      alt="HCL Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/visa.png"
+                      alt="VISA Logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="marquee"
+            style="
+              --play: running;
+              --direction: reverse;
+              --duration: 62.4s;
+              --delay: 0s;
+              --iteration-count: infinite;
+              --min-width: 100%;
+            "
+          >
+            <div class="child" style="--transform: none">
+              <div class="companies-logo">
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/inno.png"
+                    alt="Innovacer Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/free.png"
+                    alt="Freecharge Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/pub.png"
+                    alt="Publicis-Sapient Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/veri.png"
+                    alt="Verifone Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/myst.png"
+                    alt="Mystifly Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/park.jfif"
+                    alt="Park+ Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/cadence.png"
+                    alt="Cadence Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/salesf.png"
+                    alt="Salesforce Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/bny m.png"
+                    alt="BNY-Mellon Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/air.png"
+                    alt="Airtel Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img class="logo-img" src="./icons/hcl.png" alt="HCL Logo" />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/visa.png"
+                    alt="VISA Logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="marquee-container"
+          style="
+            --pause-on-hover: running;
+            --pause-on-click: running;
+            --width: 100%;
+            --transform: none;
+          "
+        >
+          <div
+            class="marquee"
+            style="
+              --play: running;
+              --direction: normal;
+              --duration: 62.4s;
+              --delay: 0s;
+              --iteration-count: infinite;
+              --min-width: 100%;
+            "
+          >
+            <div class="initial-child-container">
+              <div class="child" style="--transform: none">
+                <div class="companies-logo">
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/ola e.png"
+                      alt="OLA-Electric Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/toko.png"
+                      alt="Tokopedia Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/arceium.png"
+                      alt="Arcesium Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/idfc.jfif"
+                      alt="IDFC-First-Bank Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/optum.png"
+                      alt="Optum Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/vmock.jfif"
+                      alt="Vmock Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/gain.png"
+                      alt="Gainsight Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/man.png"
+                      alt="Man-Matters Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/lead.png"
+                      alt="Leadsquared Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/playg.png"
+                      alt="Payglocal Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/indiamart.png"
+                      alt="Indiamart Logo"
+                    />
+                  </div>
+                  <div class="logo-holder">
+                    <img
+                      class="logo-img"
+                      src="./icons/adda.png"
+                      alt="Adda247 Logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="marquee"
+            style="
+              --play: running;
+              --direction: normal;
+              --duration: 62.4s;
+              --delay: 0s;
+              --iteration-count: infinite;
+              --min-width: 100%;
+            "
+          >
+            <div class="child" style="--transform: none">
+              <div class="companies-logo">
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/ola e.png"
+                    alt="OLA-Electric Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/toko.png"
+                    alt="Tokopedia Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/arceium.png"
+                    alt="Arcesium Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/idfc.jfif"
+                    alt="IDFC-First-Bank Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/optum.png"
+                    alt="Optum Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/vmock.jfif"
+                    alt="Vmock Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/gain.png"
+                    alt="Gainsight Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/man.png"
+                    alt="Man-Matters Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/lead.png"
+                    alt="Leadsquared Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/playg.png"
+                    alt="Payglocal Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/indiamart.png"
+                    alt="Indiamart Logo"
+                  />
+                </div>
+                <div class="logo-holder">
+                  <img
+                    class="logo-img"
+                    src="./icons/adda.png"
+                    alt="Adda247 Logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="companies-placement-report-btn"
+        data-event-analytics="2fc93415-7494-4ac4-984c-544faf535755"
+        data-config="U2FsdGVkX19MIqgj96pFt1u8fwyQ7bFEiNndyFCI66DtjrEBly9wRkDiiNiSGwhu"
+      >
+        <span class="text">Placement Report</span
+        >
+            <path
+              d="M505.7 661a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9h-74.1V168c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v338.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.8zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z"
+            ></path>
+          </svg>
+          </span
+        >
+      </button>
+    </div>
+    <!--====================================== Section 3 End ====================================-->
+
+    <!--====================================== Section 4 Start ====================================-->
+    <div class="studentwall-wrapper">
+      <div class="studentwall-text-gradient">Students 💙 AccioJob</div>
+      <div class="studentwall-heading">AccioJob Wall Of Love</div>
+      <div class="studentwall-text">Our Alumni Say it Best</div>
+      <div class="wall-wrapper">
+        <div class="studentwall-content-wrapper only-web">
+          <div class="card-wrapper-outer">
+            <div class="card-wrapper">
+              <div class="card-head">
+                <div class="card-header-left">
+                  <div class="profile-img">
+                    <span
+                      style="
+                        box-sizing: border-box;
+                        display: inline-block;
+                        overflow: hidden;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0px;
+                        margin: 0px;
+                        padding: 0px;
+                        position: relative;
+                        max-width: 100%;
+                      "
+                      ><span
+                        style="
+                          box-sizing: border-box;
+                          display: block;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          max-width: 100%;
+                        "
+                        ><img
+                         
+                          aria-hidden="true"
+                        
+                          style="
+                            display: block;
+                            max-width: 100%;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                          " /></span
+                      ><img
+                       
+                      
+                        decoding="async"
+                        data-nimg="intrinsic"
+                        style="
+                          position: absolute;
+                          inset: 0px;
+                          box-sizing: border-box;
+                          padding: 0px;
+                          border: none;
+                          margin: auto;
+                          display: block;
+                          width: 0px;
+                          height: 0px;
+                          min-width: 100%;
+                          max-width: 100%;
+                          min-height: 100%;
+                          max-height: 100%;
+                          object-fit: fill;
+                        "
+                        srcset="
+                          _next/static/media/Prashant.9a38dc8e.png?imwidth=96  1x,
+                          _next/static/media/Prashant.9a38dc8e.png?imwidth=256 2x
+                        "
+                    /></span>
+                  </div>
+                  <div class="deatils">
+                    <div class="name">Prashant Singh</div>
+                    <div class="profile">
+                      Associate Technology L1 at Publicis Sapient
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="card-header-right"
+                  data-event-analytics="d393baf3-1527-40bc-a9ff-d1219fffdc09"
+                  data-config="U2FsdGVkX181B/8ORiJUT7GhrPGy2RxvjN6rQ9nTfSt4bW2U+M2cVzAZYO+OtRoyAAFA7+uMfmxQX+VKGMG35Q=="
+                >
+                  <span
+                    style="
+                      box-sizing: border-box;
+                      display: inline-block;
+                      overflow: hidden;
+                      width: initial;
+                      height: initial;
+                      background: none;
+                      opacity: 1;
+                      border: 0px;
+                      margin: 0px;
+                      padding: 0px;
+                      position: relative;
+                      max-width: 100%;
+                    "
+                    ><span
+                      style="
+                        box-sizing: border-box;
+                        display: block;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0px;
+                        margin: 0px;
+                        padding: 0px;
+                        max-width: 100%;
+                      "
+                      ><img
+                        
+                        aria-hidden="true"
+                        src="./icons/profile 3.jfif"
+                        style="
+                          display: block;
+                          max-width: 100%;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                        " /></span
+                    ><img
+                    
+                     
+                      decoding="async"
+                      data-nimg="intrinsic"
+                      style="
+                        position: absolute;
+                        inset: 0px;
+                        box-sizing: border-box;
+                        padding: 0px;
+                        border: none;
+                        margin: auto;
+                        display: block;
+                        width: 0px;
+                        height: 0px;
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 100%;
+                        max-height: 100%;
+                        object-fit: fill;
+                      "
+                      srcset="
+                        _next/static/media/quora.fefec21d.svg?imwidth=128 1x,
+                        _next/static/media/quora.fefec21d.svg?imwidth=256 2x
+                      "
+                  /></span>
+                </button>
+              </div>
+              <div class="card-content">
+                During 2020 I was only able to get interviews for positions that
+                offered like 10k-20k per month salary. With help of Acciojob I
+                was able to get placement in Publicis Sapient &amp; MAQ Software
+              </div>
+              <div class="card-bottom"></div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card-head">
+                <div class="card-header-left">
+                  <div class="profile-img">
+                    <span
+                      style="
+                        box-sizing: border-box;
+                        display: inline-block;
+                        overflow: hidden;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0px;
+                        margin: 0px;
+                        padding: 0px;
+                        position: relative;
+                        max-width: 100%;
+                      "
+                      ><span
+                        style="
+                          box-sizing: border-box;
+                          display: block;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          max-width: 100%;
+                        "
+                        ><img
+                       
+                          aria-hidden="true"
+                         
+                          style="
+                            display: block;
+                            max-width: 100%;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                          " /></span
+                      ><img
+                        
+                        src="./icons/p 4.jfif"
+                        decoding="async"
+                        data-nimg="intrinsic"
+                        style="
+                          position: absolute;
+                          inset: 0px;
+                          box-sizing: border-box;
+                          padding: 0px;
+                          border: none;
+                          margin: auto;
+                          display: block;
+                          width: 0px;
+                          height: 0px;
+                          min-width: 100%;
+                          max-width: 100%;
+                          min-height: 100%;
+                          max-height: 100%;
+                          object-fit: fill;
+                        "
+                        srcset="
+                          _next/static/media/Vimal.28ecf40b.png?imwidth=96  1x,
+                          _next/static/media/Vimal.28ecf40b.png?imwidth=256 2x
+                        "
+                    /></span>
+                  </div>
+                  <div class="deatils">
+                    <div class="name">Vimal Mishra</div>
+                    <div class="profile">Software Engineer at Mystifly</div>
+                  </div>
+                </div>
+                <button
+                  class="card-header-right"
+                  data-event-analytics="d393baf3-1527-40bc-a9ff-d1219fffdc09"
+                  data-config="U2FsdGVkX1/7CvSIXKm4JPJsiwl+nJ5lymRV/y14e5vX66e8OvdpTNbEzlPwv+KcbWbOAA0hUzXimocVf2MAog=="
+                >
+                  <span
+                    style="
+                      box-sizing: border-box;
+                      display: inline-block;
+                      overflow: hidden;
+                      width: initial;
+                      height: initial;
+                      background: none;
+                      opacity: 1;
+                      border: 0px;
+                      margin: 0px;
+                      padding: 0px;
+                      position: relative;
+                      max-width: 100%;
+                    "
+                    ><span
+                      style="
+                        box-sizing: border-box;
+                        display: block;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0px;
+                        margin: 0px;
+                        padding: 0px;
+                        max-width: 100%;
+                      "
+                      ><img
+                      
+                        aria-hidden="true"
+                        src="./icons/p 5.jfif"
+                        style="
+                          display: block;
+                          max-width: 100%;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                        " /></span
+                    ><img
+                      
+                   
+                      decoding="async"
+                      data-nimg="intrinsic"
+                      style="
+                        position: absolute;
+                        inset: 0px;
+                        box-sizing: border-box;
+                        padding: 0px;
+                        border: none;
+                        margin: auto;
+                        display: block;
+                        width: 0px;
+                        height: 0px;
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 100%;
+                        max-height: 100%;
+                        object-fit: fill;
+                      "
+                      srcset="
+                        _next/static/media/quora.fefec21d.svg?imwidth=128 1x,
+                        _next/static/media/quora.fefec21d.svg?imwidth=256 2x
+                      "
+                  /></span>
+                </button>
+              </div>
+              <div class="card-content">
+                I can certainly vouch for the level of training provided by
+                AccioJob. Doubt resolving is commendable, along with the support
+                that they provide. I personally liked problem-solving sessions
+                after the contests a lot.
+              </div>
+              <div class="card-bottom"></div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card-head">
+                <div class="card-header-left">
+                  <div class="profile-img">
+                    <span
+                      style="
+                        box-sizing: border-box;
+                        display: inline-block;
+                        overflow: hidden;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0px;
+                        margin: 0px;
+                        padding: 0px;
+                        position: relative;
+                        max-width: 100%;
+                      "
+                      ><span
+                        style="
+                          box-sizing: border-box;
+                          display: block;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          max-width: 100%;
+                        "
+                        ><img
+                        
+                          aria-hidden="true"
+                        
+                          style="
+                            display: block;
+                            max-width: 100%;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                          " /></span
+                      ><img
+                       
+                       
+                        decoding="async"
+                        data-nimg="intrinsic"
+                        style="
+                          position: absolute;
+                          inset: 0px;
+                          box-sizing: border-box;
+                          padding: 0px;
+                          border: none;
+                          margin: auto;
+                          display: block;
+                          width: 0px;
+                          height: 0px;
+                          min-width: 100%;
+                          max-width: 100%;
+                          min-height: 100%;
+                          max-height: 100%;
+                          object-fit: fill;
+                        "
+                        srcset="
+                          _next/static/media/Samarth.ad10d1ca.png?imwidth=96  1x,
+                          _next/static/media/Samarth.ad10d1ca.png?imwidth=256 2x
+                        "
+                    /></span>
+                  </div>
+                  <div class="deatils">
+                    <div class="name">Samarth Gaur</div>
+                    <div class="profile">
+                      Software Engineer at Infinite Computer Solutions
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="card-header-right"
+                  data-event-analytics="d393baf3-1527-40bc-a9ff-d1219fffdc09"
+                  data-config="U2FsdGVkX1+CBzK2LgZFNZiErKk2aar/7ZHNAn+shKNvdt3DXgF1pSRMBGvYn1407bejBRNcWwaKNococE/GpA=="
+                >
+                  <span
+                    style="
+                      box-sizing: border-box;
+                      display: inline-block;
+                      overflow: hidden;
+                      width: initial;
+                      height: initial;
+                      background: none;
+                      opacity: 1;
+                      border: 0px;
+                      margin: 0px;
+                      padding: 0px;
+                      position: relative;
+                      max-width: 100%;
+                    "
+                    ><span
+                      style="
+                        box-sizing: border-box;
+                        display: block;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0px;
+                        margin: 0px;
+                        padding: 0px;
+                        max-width: 100%;
+                      "
+                      ><img
+                        
+                        aria-hidden="true"
+                        src="./icons/p8.jfif"
+                        style="
+                          display: block;
+                          max-width: 100%;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                        " /></span
+                    ><img
+                      
+                  
+                      decoding="async"
+                      data-nimg="intrinsic"
+                      style="
+                        position: absolute;
+                        inset: 0px;
+                        box-sizing: border-box;
+                        padding: 0px;
+                        border: none;
+                        margin: auto;
+                        display: block;
+                        width: 0px;
+                        height: 0px;
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 100%;
+                        max-height: 100%;
+                        object-fit: fill;
+                      "
+                      srcset="
+                        _next/static/media/quora.fefec21d.svg?imwidth=128 1x,
+                        _next/static/media/quora.fefec21d.svg?imwidth=256 2x
+                      "
+                  /></span>
+                </button>
+              </div>
+              <div class="card-content">
+                I cleared Amazon within 2.5 months of studying at AccioJob in
+                which 2 months were mostly DS Algo and a bit of front end. I got
+                a good hold over DSA and especially problem solving which I
+                didn't have earlier on.
+              </div>
+              <div class="card-bottom"></div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card-head">
+                <div class="card-header-left">
+                  <div class="profile-img">
+                    <span
+                      style="
+                        box-sizing: border-box;
+                        display: inline-block;
+                        overflow: hidden;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0px;
+                        margin: 0px;
+                        padding: 0px;
+                        position: relative;
+                        max-width: 100%;
+                      "
+                      ><span
+                        style="
+                          box-sizing: border-box;
+                          display: block;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          max-width: 100%;
+                        "
+                        ><img
+                          aria-hidden="true"
+                          
+                          style="
+                            display: block;
+                            max-width: 100%;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                          " /></span
+                      ><img
+                       
+                      
+                        decoding="async"
+                        data-nimg="intrinsic"
+                        style="
+                          position: absolute;
+                          inset: 0px;
+                          box-sizing: border-box;
+                          padding: 0px;
+                          border: none;
+                          margin: auto;
+                          display: block;
+                          width: 0px;
+                          height: 0px;
+                          min-width: 100%;
+                          max-width: 100%;
+                          min-height: 100%;
+                          max-height: 100%;
+                          object-fit: fill;
+                        "
+                        srcset="
+                          _next/static/media/Manish.74045b49.png?imwidth=96  1x,
+                          _next/static/media/Manish.74045b49.png?imwidth=256 2x
+                        "
+                    /></span>
+                  </div>
+                  <div class="deatils">
+                    <div class="name">Manish Parihar</div>
+                    <div class="profile">Software Developer at Xperate</div>
+                  </div>
+                </div>
+                <button
+                  class="card-header-right"
+                  data-event-analytics="d393baf3-1527-40bc-a9ff-d1219fffdc09"
+                  data-config="U2FsdGVkX18jsW8uBud6RNiWZi0sbxuw3TFqbpBqcZ+ozyvFEF/hOOePGhlHBunJwoB6IQaiAwVJcyn0oS0fMA=="
+                >
+                  <span
+                    style="
+                      box-sizing: border-box;
+                      display: inline-block;
+                      overflow: hidden;
+                      width: initial;
+                      height: initial;
+                      background: none;
+                      opacity: 1;
+                      border: 0px;
+                      margin: 0px;
+                      padding: 0px;
+                      position: relative;
+                      max-width: 100%;
+                    "
+                    ><span
+                      style="
+                        box-sizing: border-box;
+                        display: block;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0px;
+                        margin: 0px;
+                        padding: 0px;
+                        max-width: 100%;
+                      "
+                      ><img
+                       
+                        aria-hidden="true"
+                        src="./icons/p10.jfif"
+                        style="
+                          display: block;
+                          max-width: 100%;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                        " /></span
+                    ><img
+                     
+                     
+                      decoding="async"
+                      data-nimg="intrinsic"
+                      style="
+                        position: absolute;
+                        inset: 0px;
+                        box-sizing: border-box;
+                        padding: 0px;
+                        border: none;
+                        margin: auto;
+                        display: block;
+                        width: 0px;
+                        height: 0px;
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 100%;
+                        max-height: 100%;
+                        object-fit: fill;
+                      "
+                      srcset="
+                        _next/static/media/linkedin.cf48f1af.svg?imwidth=128 1x,
+                        _next/static/media/linkedin.cf48f1af.svg?imwidth=256 2x
+                      "
+                  /></span>
+                </button>
+              </div>
+              <div class="card-content">
+                After joining AccioJob I was able to learn a lot and upskill
+                myself in coding and full-stack web development. My batch
+                manager was extremely helpful and helped me along the way
+                whenever I needed him to.
+              </div>
+              <div class="card-bottom"></div>
+            </div>
+          </div>
+          <div class="card-wrapper-outer">
+            <div class="card-wrapper">
+              <div class="card-head">
+                <div class="card-header-left">
+                  <div class="profile-img">
+                    <span
+                      style="
+                        box-sizing: border-box;
+                        display: inline-block;
+                        overflow: hidden;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0px;
+                        margin: 0px;
+                        padding: 0px;
+                        position: relative;
+                        max-width: 100%;
+                      "
+                      ><span
+                        style="
+                          box-sizing: border-box;
+                          display: block;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          max-width: 100%;
+                        "
+                        ><img
+                        
+                          aria-hidden="true"
+                          
+                          style="
+                            display: block;
+                            max-width: 100%;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                          " /></span
+                      ><img
+                       
+                        src="_next/static/media/Pawan.ff80d8cd.png?imwidth=256"
+                        decoding="async"
+                        data-nimg="intrinsic"
+                        style="
+                          position: absolute;
+                          inset: 0px;
+                          box-sizing: border-box;
+                          padding: 0px;
+                          border: none;
+                          margin: auto;
+                          display: block;
+                          width: 0px;
+                          height: 0px;
+                          min-width: 100%;
+                          max-width: 100%;
+                          min-height: 100%;
+                          max-height: 100%;
+                          object-fit: fill;
+                        "
+                        srcset="
+                          _next/static/media/Pawan.ff80d8cd.png?imwidth=96  1x,
+                          _next/static/media/Pawan.ff80d8cd.png?imwidth=256 2x
+                        "
+                    /></span>
+                  </div>
+
+                  <div class="deatils">
+                    <div class="name">Ishan Kishan</div>
+                    <div class="profile">Intern at Indian Cricket Board</div>
+                  </div>
+                </div>
+                <button
+                  class="card-header-right"
+                  data-event-analytics="d393baf3-1527-40bc-a9ff-d1219fffdc09"
+                  data-config="U2FsdGVkX18jsW8uBud6RNiWZi0sbxuw3TFqbpBqcZ+ozyvFEF/hOOePGhlHBunJwoB6IQaiAwVJcyn0oS0fMA=="
+                >
+                  <span
+                    style="
+                      box-sizing: border-box;
+                      display: inline-block;
+                      overflow: hidden;
+                      width: initial;
+                      height: initial;
+                      background: none;
+                      opacity: 1;
+                      border: 0px;
+                      margin: 0px;
+                      padding: 0px;
+                      position: relative;
+                      max-width: 100%;
+                    "
+                    ><span
+                      style="
+                        box-sizing: border-box;
+                        display: block;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0px;
+                        margin: 0px;
+                        padding: 0px;
+                        max-width: 100%;
+                      "
+                      ><img
+                       
+                        aria-hidden="true"
+                        src="./icons/p11.jfif"
+                        style="
+                          display: block;
+                          max-width: 100%;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                        " /></span
+                    ><img
+                    
+                      src="_next/static/media/linkedin.cf48f1af.svg?imwidth=256"
+                      decoding="async"
+                      data-nimg="intrinsic"
+                      style="
+                        position: absolute;
+                        inset: 0px;
+                        box-sizing: border-box;
+                        padding: 0px;
+                        border: none;
+                        margin: auto;
+                        display: block;
+                        width: 0px;
+                        height: 0px;
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 100%;
+                        max-height: 100%;
+                        object-fit: fill;
+                      "
+                      srcset="
+                        _next/static/media/linkedin.cf48f1af.svg?imwidth=128 1x,
+                        _next/static/media/linkedin.cf48f1af.svg?imwidth=256 2x
+                      "
+                  /></span>
+                </button>
+              </div>
+              <div class="card-content">
+                Ishan Kishan (born 18 July 1998) is an Indian international cricketer who plays for the Indian national cricket team as a wicket-keeper batsman. He made his international debut in March 2021 against England. He plays for Mumbai Indians in the Indian Premier League (IPL) and for Jharkhand in domestic cricket.
+
+                In December 2022 he scored 210 runs in 131 balls in a One Day International (ODI) match against Bangladesh, becoming the youngest cricketer to score an ODI double century and the first to convert a maiden ODI century to a double century. The innings was also the fastest double century in an ODI.
+              </div>
+              <div class="card-bottom"></div>
+            </div>
+          </div>
+          <div class="card-wrapper-outer">
+            <div class="card-wrapper">
+              <div class="card-head">
+                <div class="card-header-left">
+                  <div class="profile-img">
+                    <span
+                      style="
+                        box-sizing: border-box;
+                        display: inline-block;
+                        overflow: hidden;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0px;
+                        margin: 0px;
+                        padding: 0px;
+                        position: relative;
+                        max-width: 100%;
+                      "
+                      ><span
+                        style="
+                          box-sizing: border-box;
+                          display: block;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          max-width: 100%;
+                        "
+                        ><img
+                        
+                          aria-hidden="true"
+                         
+                          style="
+                            display: block;
+                            max-width: 100%;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                          " /></span
+                      ><img
+                      
+                        src="_next/static/media/Pawan.ff80d8cd.png?imwidth=256"
+                        decoding="async"
+                        data-nimg="intrinsic"
+                        style="
+                          position: absolute;
+                          inset: 0px;
+                          box-sizing: border-box;
+                          padding: 0px;
+                          border: none;
+                          margin: auto;
+                          display: block;
+                          width: 0px;
+                          height: 0px;
+                          min-width: 100%;
+                          max-width: 100%;
+                          min-height: 100%;
+                          max-height: 100%;
+                          object-fit: fill;
+                        "
+                        srcset="
+                          _next/static/media/Pawan.ff80d8cd.png?imwidth=96  1x,
+                          _next/static/media/Pawan.ff80d8cd.png?imwidth=256 2x
+                        "
+                    /></span>
+                  </div>
+
+                  <div class="deatils">
+                    <div class="name">Rohit Sharma</div>
+                    <div class="profile">SDE II at Indian Cricket Board</div>
+                  </div>
+                </div>
+                <button
+                  class="card-header-right"
+                  data-event-analytics="d393baf3-1527-40bc-a9ff-d1219fffdc09"
+                  data-config="U2FsdGVkX18jsW8uBud6RNiWZi0sbxuw3TFqbpBqcZ+ozyvFEF/hOOePGhlHBunJwoB6IQaiAwVJcyn0oS0fMA=="
+                >
+                  <span
+                    style="
+                      box-sizing: border-box;
+                      display: inline-block;
+                      overflow: hidden;
+                      width: initial;
+                      height: initial;
+                      background: none;
+                      opacity: 1;
+                      border: 0px;
+                      margin: 0px;
+                      padding: 0px;
+                      position: relative;
+                      max-width: 100%;
+                    "
+                    ><span
+                      style="
+                        box-sizing: border-box;
+                        display: block;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0px;
+                        margin: 0px;
+                        padding: 0px;
+                        max-width: 100%;
+                      "
+                      ><img
+                        alt=""
+                        aria-hidden="true"
+                        src="./icons/p13.jfif"
+                        style="
+                          display: block;
+                          max-width: 100%;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                        " /></span
+                    ><img
+                     
+                      src="_next/static/media/linkedin.cf48f1af.svg?imwidth=256"
+                      decoding="async"
+                      data-nimg="intrinsic"
+                      style="
+                        position: absolute;
+                        inset: 0px;
+                        box-sizing: border-box;
+                        padding: 0px;
+                        border: none;
+                        margin: auto;
+                        display: block;
+                        width: 0px;
+                        height: 0px;
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 100%;
+                        max-height: 100%;
+                        object-fit: fill;
+                      "
+                      srcset="
+                        _next/static/media/linkedin.cf48f1af.svg?imwidth=128 1x,
+                        _next/static/media/linkedin.cf48f1af.svg?imwidth=256 2x
+                      "
+                  /></span>
+                </button>
+              </div>
+              <div class="card-content">
+                I learned to be more protective of those hours and more realistic. This will always be something I struggle with, but learning to say no (a lot) more and to focus on a few important tasks each day.
+              </div>
+              <div class="card-bottom"></div>
+            </div>
+          </div>
+
+          <!--====================================== Section 4 End ====================================-->
+
+
+         
+         
+        
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+<!--====================================== Section 5 Start ====================================-->
+    <aside>
+    <div class="certificate-section-left"><div class="section-left-top"><div><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2727%27%20height=%2740%27/%3e"></span><img  src="" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:left" srcset="_next/static/media/badge.d9bd2c7e.svg?imwidth=32 1x, _next/static/media/badge.d9bd2c7e.svg?imwidth=64 2x"> <img src="https://acciojob.com/_next/static/media/all.bd93e7f1.svg?imwidth=1200" alt=""></span></div><p class="text">top quality curriculum</p></div><div class="section-left-mid"><p>National Skill Development Corporation<!-- --> <span class="span-orange"> (NSDC)</span> Accredited Certificate</p></div><div class="section-left-bottom">AccioJob is proud to announce a strategic partnership with the National Skill Development Corporation (NSDC). Our students will receive a certificate recognized Nationally &amp; authenticated via the Skill India Portal.</div></div>
+
+    <div class="section-left-top"><div><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"  aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2727%27%20height=%2740%27/%3e"></span><img src="_next/static/media/badge.d9bd2c7e.svg?imwidth=64" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:left" srcset="_next/static/media/badge.d9bd2c7e.svg?imwidth=32 1x, _next/static/media/badge.d9bd2c7e.svg?imwidth=64 2x"></span></div><p class="text">top quality curriculum</p></div>
+  </aside>
+<!--====================================== Section 5 End ====================================-->
+  </body>
+</html>
